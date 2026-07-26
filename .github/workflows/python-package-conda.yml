@@ -20,7 +20,7 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        conda install -y python=3.9 pip
+        conda install -y python=3.11 pip
 
     - name: Lint with flake8
       run: |
