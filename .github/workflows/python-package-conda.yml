@@ -21,6 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         conda install -y python=3.10 pip
+        pip install flask requests pytest
 
     - name: Lint with flake8
       run: |
@@ -32,7 +33,7 @@ jobs:
     - name: Start server
       run: |
         python app.py &
-        sleep 3
+        sleep 5
 
     - name: Test with pytest
       run: |
