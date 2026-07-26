@@ -22,7 +22,7 @@ jobs:
       run: |
         conda install -y python=3.10 pip
 
-    -  name: Lint with flake8
+    - name: Lint with flake8
       run: |
         conda install flake8
         # stop the build if there are Python syntax errors or undefined names
